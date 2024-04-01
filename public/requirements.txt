@@ -18,4 +18,3 @@ joblib
 MarkupSafe
 numpy
 scipy
-scikit-learn==1.2.2
