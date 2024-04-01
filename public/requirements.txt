@@ -6,3 +6,7 @@ pandas
 scikit-learn
 seaborn
 tensorflow
+threadpoolctl
+Werkzeug
+gunicorn
+flask_cors
