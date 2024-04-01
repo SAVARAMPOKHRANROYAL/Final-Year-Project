@@ -10,3 +10,12 @@ threadpoolctl
 Werkzeug
 gunicorn
 flask_cors
+click
+colorama
+itsdangerous
+Jinja2
+joblib
+MarkupSafe
+numpy
+scipy
+scikit-learn==1.2.2
