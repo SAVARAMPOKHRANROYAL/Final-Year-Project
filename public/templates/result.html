@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EEG Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <h2>{% if prediction == 0 %}
+        <h1>-------This Record person is healthy-------</h1>
+    {% elif prediction == 1 %}
+        <h1>-------This Record person is Suffering from Alzheimer's-------</h1>
+    {% endif %}</h2>
+</body>
+</html>
