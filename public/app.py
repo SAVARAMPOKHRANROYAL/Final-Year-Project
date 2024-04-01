@@ -17,7 +17,7 @@ def index():
         file = request.files['file']
         if file:
             # Save the uploaded file
-            file_path = f"uploaded_files/{file.filename}"
+            file_path = f"./uploaded_files/{file.filename}"
             file.save(file_path)
             
             # Perform prediction
