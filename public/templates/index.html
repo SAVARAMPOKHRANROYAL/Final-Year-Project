@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDF File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333366;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #333366;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555599;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload an EDF file</h1>
+    <h1>DETECTION OF ALZHEIMER’S DISEASE THROUGH EEG SIGNALS OF PATIENT</h1>
     <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" required>
+        <label for="file">Choose an EDF file:</label><br>
+        <input type="file" name="file" id="file" required><br>
         <input type="submit" value="Upload">
     </form>
 </body>

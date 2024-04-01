@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEG Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333366;
+        }
+
+        h2.healthy, h2.alzheimers {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h2.healthy {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        h2.alzheimers {
+            background-color: #FF5733;
+            color: white;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Prediction Result</h1>
-    <h2>{% if prediction == 0 %}
-        <h1>-------This Record person is healthy-------</h1>
+    {% if prediction == 0 %}
+        <h2 class="healthy">-------This Record person is healthy-------</h2>
+        <p>Here we will be adding the measures to avoid diseases.</p>
     {% elif prediction == 1 %}
-        <h1>-------This Record person is Suffering from Alzheimer's-------</h1>
-    {% endif %}</h2>
+        <h2 class="alzheimers">-------This Record person is Suffering from Alzheimer's-------</h2>
+        <p>Here we will be adding the measures to take to decrease Alzheimer's disease.</p>
+    {% endif %}
 </body>
 </html>
